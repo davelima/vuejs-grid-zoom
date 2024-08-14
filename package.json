@@ -1,10 +1,9 @@
 {
     "name": "vuejs-grid-zoom",
-    "version": "0.1.6",
+    "version": "0.1.8",
     "type": "module",
-    "types": "types/index.d.ts",
     "scripts": {
-        "build": "vue-tsc -b && vite build"
+        "build": "vue-tsc -b --declaration"
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^5.1.2",
@@ -14,17 +13,18 @@
         "vue": "^3.4.37"
     },
     "files": [
-        "dist/*",
-        "types/*"
+        "dist/*"
     ],
     "devDependencies": {
         "sass-embedded": "^1.77.8",
         "typescript": "^5.5.3",
+        "vite-dts": "^1.0.4",
         "vue-tsc": "^2.0.29"
     },
     "description": "VueJS wrapper for codrops/GridZoom",
-    "main": "./dist/vuejs-grid-zoom.umd.cjs",
-    "module": "./dist/vuejs-grid-zoom.js",
+    "main": "dist/vuejs-grid-zoom.umd.cjs",
+    "module": "dist/vuejs-grid-zoom.js",
+    "types": "dist/index.d.ts",
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",

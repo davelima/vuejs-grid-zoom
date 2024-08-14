@@ -1,6 +1,6 @@
 {
     "name": "vuejs-grid-zoom",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "type": "module",
     "types": "types/index.d.ts",
     "scripts": {
@@ -26,6 +26,7 @@
     "module": "./dist/vuejs-grid-zoom.js",
     "exports": {
         ".": {
+            "types": "./dist/index.d.ts",
             "import": "./dist/vuejs-grid-zoom.js",
             "require": "./dist/vuejs-grid-zoom.umd.cjs"
         }

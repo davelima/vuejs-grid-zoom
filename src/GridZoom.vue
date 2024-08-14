@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {Grid} from './js/grid'
-import {preloadImages} from './js/utils'
+import {Grid} from './js/grid.js'
+import {preloadImages} from './js/utils.js'
 import {onMounted} from 'vue'
 
 onMounted(() => {
@@ -99,7 +99,7 @@ defineProps<{
           v-bind:class="{
             'is-image': cell.type === 'image'
           }"
-          v-for="(cell, index) in cells.filter(item => item.type === 'image')"
+          v-for="cell in cells.filter(item => item.type === 'image')"
         >
           <div class="grid__cell-img">
             <div

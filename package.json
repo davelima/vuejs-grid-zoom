@@ -1,6 +1,6 @@
 {
     "name": "vuejs-grid-zoom",
-    "version": "0.1.16",
+    "version": "0.1.17",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -33,7 +33,10 @@
             "import": "./dist/index.js",
             "require": "./dist/index.umd.cjs"
         },
-        "./style.css": "./dist/style.css"
+        "./src/css/*.scss": {
+            "import": "./src/scss/*.scss",
+            "require": "./src/scss/*.scss"
+        }
     },
     "repository": {
         "type": "git",

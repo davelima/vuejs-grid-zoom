@@ -5,7 +5,8 @@ import dts from 'vite-dts'
 
 export default defineConfig({
   plugins: [
-    vue()
+    vue(),
+    dts()
   ],
   build: {
     lib: {
@@ -16,9 +17,6 @@ export default defineConfig({
       fileName: 'vuejs-grid-zoom'
     },
     rollupOptions: {
-      plugins: [
-        dts()
-      ],
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ['vue'],

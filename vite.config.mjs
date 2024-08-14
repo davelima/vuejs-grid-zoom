@@ -1,7 +1,6 @@
 import {defineConfig} from "vite";
 import {resolve} from "path";
 import vue from "@vitejs/plugin-vue";
-import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,7 +14,6 @@ export default defineConfig({
       fileName: "index"
     },
     rollupOptions: {
-      plugins: [dts({rollupTypes: true, entryRoot: 'src/'})],
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ["vue"],

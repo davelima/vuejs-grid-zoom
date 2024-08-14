@@ -1,5 +1,15 @@
 {
-  "files": [],
+  "files": ["dist/index.js"],
+  "compilerOptions": {
+    "declaration": true,
+    "allowJs": true,
+    "composite": true,
+    "target": "ESNext",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "jsx": "preserve"
+  },
   "references": [
     { "path": "./tsconfig.app.json" }
   ]

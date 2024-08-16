@@ -14,7 +14,7 @@ onMounted(() => {
 
 defineProps<{
   cells: {
-    type: string,
+    type: "image" | "component" | "html" | "filled",
     position: string
     padded?: boolean
     prepend?: string

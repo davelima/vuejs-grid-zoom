@@ -298,6 +298,10 @@
       grid-column: 1;
       grid-row: 1;
     }
+    .grid__cell-c2-r1 {
+      grid-column: 2;
+      grid-row: 1;
+    }
     .grid__cell-c3-r1 {
       grid-column: 3;
       grid-row: 1;
@@ -322,6 +326,10 @@
       grid-column: 4;
       grid-row: 2;
     }
+    .grid__cell-c1-r3 {
+      grid-column: 1;
+      grid-row: 3;
+    }
     .grid__cell-c2-r3 {
       grid-column: 2;
       grid-row: 3;
@@ -336,6 +344,10 @@
     }
     .grid__cell-c1-r4 {
       grid-column: 1;
+      grid-row: 4;
+    }
+    .grid__cell-c2-r4 {
+      grid-column: 2;
       grid-row: 4;
     }
     .grid__cell-c3-r4 {

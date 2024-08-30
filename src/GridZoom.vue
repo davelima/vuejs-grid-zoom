@@ -73,7 +73,7 @@ defineProps<{
         <h2 class="grid-zoom-content__item-heading oh" v-if="cell.title"><span class="oh__inner" v-html="cell.title"/>
         </h2>
         <p class="grid-zoom-content__item-text" v-if="cell.text" v-html="cell.text"/>
-        <a class="grid-zoom-content__item-link oh" v-if="cell.link"><span class="oh__inner" v-html="cell.linkText || cell.link"/></a>
+        <a class="grid-zoom-content__item-link oh" v-if="cell.link" :href="cell.link"><span class="oh__inner" v-html="cell.linkText || cell.link"/></a>
         <nav class="slide-nav">
           <div
             class="slide-nav__img slide-nav__img--prev"
